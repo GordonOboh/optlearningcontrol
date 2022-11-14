@@ -17,7 +17,13 @@ DELTA_T = 0.01 #integration step
         
 NUMBER_STATES = 6 # number of states
 NUMBER_CONTROLS = 2 # number of controls
-        
+
+##____________________
+#import sympy as sym  
+#x,V_x,y,V_y,theta,omega,u1,u2 = sym.symbols('x V_x y V_y theta omega u1 u2')
+#
+#
+##_______________________
             
 def get_next_state(z,u):
     """
