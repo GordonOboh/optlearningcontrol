@@ -1,0 +1,5 @@
+# Versions pinned to December 2022 (project creation date)
+numpy==1.24.0
+matplotlib==3.6.2
+sympy==1.11.1
+torch==1.13.0
