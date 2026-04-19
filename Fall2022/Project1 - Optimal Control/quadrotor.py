@@ -86,7 +86,7 @@ def simulate(z0, controller, horizon_length, disturbance = False):
     return t, z, u
     
     
-def animate_robot(x, u, dt = 0.01):
+def animate_robot(x, u, dt = 0.01, pass_fps=False):
     """
     This function makes an animation showing the behavior of the quadrotor
     takes as input the result of a simulation (with dt=0.01s)
@@ -171,3 +171,8 @@ def animate_robot(x, u, dt = 0.01):
     plt.close(fig)
     plt.close(ani._fig)
     IPython.display.display_html(IPython.core.display.HTML(ani.to_html5_video()))
+    if pass_fps:
+        fps = 1000/use_dt
+        return ani, fps
+    else :
+        return ani

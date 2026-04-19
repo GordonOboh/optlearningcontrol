@@ -1,26 +1,51 @@
-# Reinforcement learning and optimal control for robotics (ROB-GY 6323)
+# Optimal & Learning Control for Robotics
 
-This repository provides material used for the class **Reinforcement learning and optimal control for robotics** (ROB-GY 6323) taught at New York University by [Ludovic Righetti](https://engineering.nyu.edu/faculty/ludovic-righetti).
-You are free to use and copy this material (at your own risk), please reference the material if you use it.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
 
-## Working with python
-We work with Python 3.7 or above - numpy, scipy and matplotlib are recommended libraries to install (come with Anaconda by default). Most the material is given as Jupyter notebooks.
+> Personal coursework repository for **NYU ROB-GY 6323** — Reinforcement Learning and Optimal Control for Robotics, taught by [Ludovic Righetti](https://engineering.nyu.edu/faculty/ludovic-righetti).  
+> Implements controllers of increasing complexity: from LQR to iterative LQR to Q-learning.
 
-Anaconda is a straightforward, multi-platform, easy-to-use python distribution. It can be downloaded here https://www.anaconda.com/download/ and extensive documentation is available here https://docs.anaconda.com/anaconda/
+---
 
-Jupyter (comes with default Anaconda installation) is a great way to create notebooks for python. A simple tutorial can be found here https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/
- 
-Python tutorial (the web is full of great tutorials). Here are links to start: 
-https://docs.python.org/3.7/tutorial/index.html
+## Projects
 
-Numpy for people coming from Matlab: http://mathesaurus.sourceforge.net/matlab-numpy.html
+### [Project 1 — Optimal Control of a 2D Quadrotor](Fall2022/Project1%20-%20Optimal%20Control/README.md)
 
-Plotting with Python: http://matplotlib.org/users/pyplot_tutorial.html
+Design controllers to make a planar quadrotor perform acrobatic maneuvers. Four parts of increasing complexity:
 
+| Part | Method | Task |
+|---|---|---|
+| 1 | Setup | Discretise dynamics, derive hover control u* |
+| 2 | Infinite-horizon LQR | Keep robot at rest under wind disturbances |
+| 3 | Time-varying LQR | Track a circular trajectory |
+| 4 | iLQR | Reach a vertical orientation; perform a full flip |
 
-## Issues / Feedback
-We welcome feedback. If you find any issues, errors or have any ideas to improve the material, feel free to [create an issue](https://help.github.com/en/articles/creating-an-issue) and we will try to address it.
+→ [View Project 1 README](Fall2022/Project1%20-%20Optimal%20Control/README.md)
 
+---
 
-## Contributors
-The material has been developped by [Ludovic Righetti](https://engineering.nyu.edu/faculty/ludovic-righetti) (ECE-MAE, NYU). JingYi Wang (Teaching Assistant) helped develop the Spring 2019 material and Yilu Peng (Teaching Assistant) helped develop the Spring 2020 material.
+### [Project 2 — Q-Learning: Inverted Pendulum](Fall2022/Project2%20-%20Reinforcement%20Learning/README.md)
+
+Train a tabular Q-learning agent to swing a pendulum from rest to the inverted position. Two experiments compare torque limit configurations (±3 vs ±5).
+
+| Part | Method | Task |
+|---|---|---|
+| 1 | Q-learning (table) | Learn a swing-up policy with ε-greedy exploration |
+| 2 | Hyperparameter study | Compare controls `[-3,0,3]` vs `[-5,0,5]` |
+
+→ [View Project 2 README](Fall2022/Project2%20-%20Reinforcement%20Learning/README.md)
+
+---
+
+## Setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Course
+
+**NYU ROB-GY 6323** — Reinforcement Learning and Optimal Control for Robotics  
+Instructor: [Ludovic Righetti](https://engineering.nyu.edu/faculty/ludovic-righetti), ECE-MAE, New York University

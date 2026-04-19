@@ -63,7 +63,7 @@ def simulate(x0, policy, T):
     return t, x, u
 
 
-def animate_robot(x):
+def animate_robot(x, pass_fps=False):
     """
     This function makes an animation showing the behavior of the pendulum
     takes as input the result of a simulation - dt is the sampling time (0.1s normally)
@@ -109,3 +109,8 @@ def animate_robot(x):
     plt.close(fig)
     plt.close(ani._fig)
     IPython.display.display_html(IPython.core.display.HTML(ani.to_html5_video()))
+    if pass_fps:
+        fps = 1000/use_dt
+        return ani, fps
+    else :
+        return ani
