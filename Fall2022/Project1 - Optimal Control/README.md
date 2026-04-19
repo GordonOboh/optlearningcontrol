@@ -1,6 +1,7 @@
 # Project 1 — Optimal Control of a 2D Quadrotor
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+[![Report](https://img.shields.io/badge/report-PDF-red?logo=adobeacrobatreader&logoColor=white)](iLQR.pdf)
 
 > Build controllers of increasing complexity to make a 2D quadrotor perform acrobatic maneuvers — from hovering to a full flip — using LQR and iterative LQR (iLQR). Part of NYU ROB-GY 6323.
 
@@ -153,6 +154,7 @@ Project1 - Optimal Control/
 ├── Part 2.ipynb                          # Infinite-horizon LQR controller
 ├── Part 3.ipynb                          # Time-varying LQR — circular trajectory tracking
 ├── Part 4.ipynb                          # iLQR — acrobatic maneuvers (Task 1 & 2)
+├── iLQR.pdf                              # Full written report
 ├── test.py                               # Standalone test script
 └── data_viz/                             # Saved plots and animations (a = no disturbance, b = with disturbance)
 ```
