@@ -70,6 +70,12 @@ Both use `np.random.choice` with epsilon-greedy action selection and save all ou
 
 ## Results
 
+### Animations
+
+| -404 | -505 |
+|---|---|
+| ![Animation -404](data_viz/my_animation-404.gif) | ![Animation -505](data_viz/my_animation-505.gif) |
+
 ### Learning Progress
 
 | -404 | -505 |
