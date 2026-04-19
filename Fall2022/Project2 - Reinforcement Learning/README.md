@@ -70,6 +70,12 @@ Both use `np.random.choice` with epsilon-greedy action selection and save all ou
 
 ## Results
 
+### Animations
+
+| -404 | -505 |
+|---|---|
+| ![Animation -404](data_viz/my_animation-404.gif) | ![Animation -505](data_viz/my_animation-505.gif) |
+
 ### Learning Progress
 
 | -404 | -505 |
@@ -101,12 +107,6 @@ Both use `np.random.choice` with epsilon-greedy action selection and save all ou
 | Control vs time -404 | Control vs time -505 |
 |---|---|
 | <img src="data_viz/control vs time-404.png" width="400"> | <img src="data_viz/control vs time-505.png" width="400"> |
-
-### Animations
-
-| -404 | -505 |
-|---|---|
-| ![Animation -404](data_viz/my_animation-404.gif) | ![Animation -505](data_viz/my_animation-505.gif) |
 
 ---
 
